@@ -1,4 +1,3 @@
-// src/components/ThemeToggleButton.tsx
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "@/store/theme-slice";
 import { useEffect } from "react";
@@ -8,7 +7,6 @@ const ThemeToggle = () => {
   const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.theme.theme);
 
-  // Apply the theme to the document when the theme changes
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
   }, [theme]);

@@ -1,9 +1,8 @@
-// src/store/themeSlice.ts
 import { createSlice } from "@reduxjs/toolkit";
 import { ThemeState } from "@/types";
 
 const initialState: ThemeState = {
-  theme: "light", // default theme
+  theme: "light",
 };
 
 export const themeSlice = createSlice({
